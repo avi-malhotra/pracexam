@@ -10,15 +10,15 @@ class Car{
     protected:
     int price;
     int VinNumber;
-    int emission;
+    int emissions=0;
     public:
     Car();
     void set_price(int);
     void set_VinNumber(int);
-    void set_emission(int);
+    void set_emissions(int);
     int get_price();
     int get_VinNumber();
-    int get_emission();
+    int get_emissions();
     virtual void drive(int kms)=0;
 };
 #endif
