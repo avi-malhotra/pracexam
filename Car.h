@@ -10,12 +10,13 @@ class Car{
     protected:
     int price;
     int vinNumber;
-    int emissions=0;
+    int emissions;
     public:
     Car();
-    void set_price(int);
-    void set_vinNumber(int);
-    void set_emissions(int);
+    Car(int price);
+    void set_price(int p);
+    void set_vinNumber(int v);
+    void set_emissions(int e);
     int get_price();
     int get_vinNumber();
     int get_emissions();
